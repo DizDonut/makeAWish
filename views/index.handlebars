@@ -1,0 +1,14 @@
+<h1>My Wish List</h1>
+
+<ul>
+  {{#each wishes}}
+    <li>{{id}}</li>
+    <li>{{wish}}</li>
+  {{/each}}
+</ul>
+
+<form action="/" method="POST">
+	<textarea type="text" name="task"></textarea>
+
+	<button type="submit">Submit</button>
+</form>
